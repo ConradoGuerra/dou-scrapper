@@ -1,6 +1,8 @@
-from app import create_app
-
-app = create_app()
+from services.create_report import create_report
 
 if __name__ == "__main__":
-    app.run()
+    print("---------------------------------------------------------------------------")
+    print("Application started")
+    create_report()
+    print("Application finished")
+    print("---------------------------------------------------------------------------")
